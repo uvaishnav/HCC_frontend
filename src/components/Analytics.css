@@ -1,0 +1,205 @@
+.analytics {
+  padding: 1rem;
+}
+
+.analytics-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-title h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.date {
+  color: #666;
+}
+
+.view-report {
+  padding: 0.5rem 1rem;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.view-report:hover {
+  background-color: #357abd;
+}
+
+.analytics-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin: 0 0 1.5rem;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+/* Stress Overview Styles */
+.stress-chart {
+  height: 200px;
+}
+
+.chart-legend {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.dot.high { background-color: #ff5252; }
+.dot.moderate { background-color: #ffa726; }
+.dot.low { background-color: #66bb6a; }
+
+/* Emotion Distribution Styles */
+.distribution-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.stat-item i {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat-item .label {
+  flex: 1;
+  color: #666;
+}
+
+.stat-item .value {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Work Insights Styles */
+.insights-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.insight-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.progress-bar {
+  height: 8px;
+  border-radius: 4px;
+  margin: 0.5rem 0;
+}
+
+.progress-bar.high {
+  background-color: #ff5252;
+  width: 100%;
+}
+
+.progress-bar.moderate {
+  background-color: #ffa726;
+  width: 70%;
+}
+
+.progress-bar.low {
+  background-color: #66bb6a;
+  width: 30%;
+}
+
+.status {
+  font-size: 0.9rem;
+  color: #666;
+  align-self: flex-end;
+}
+
+/* Recommendations Styles */
+.recommendations-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.recommendation-item {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.recommendation-item i {
+  width: 40px;
+  height: 40px;
+  background-color: #e3f2fd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4a90e2;
+}
+
+.recommendation-content h4 {
+  margin: 0 0 0.5rem;
+  color: #333;
+}
+
+.recommendation-content p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+} 
